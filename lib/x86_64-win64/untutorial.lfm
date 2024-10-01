@@ -1,0 +1,69 @@
+object frmTutorial: TfrmTutorial
+  Left = 1266
+  Height = 120
+  Top = 534
+  Width = 482
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Tutorial'
+  ClientHeight = 120
+  ClientWidth = 482
+  FormStyle = fsStayOnTop
+  Position = poMainFormCenter
+  LCLVersion = '3.0.0.3'
+  object pnl_wrapper: TPanel
+    Left = 0
+    Height = 120
+    Top = 0
+    Width = 482
+    Align = alClient
+    BevelOuter = bvNone
+    BorderWidth = 5
+    BorderStyle = bsSingle
+    ClientHeight = 116
+    ClientWidth = 478
+    TabOrder = 0
+    object Panel1: TPanel
+      Left = 5
+      Height = 27
+      Top = 84
+      Width = 468
+      Align = alBottom
+      BevelOuter = bvNone
+      ClientHeight = 27
+      ClientWidth = 468
+      TabOrder = 0
+      object btn_skip_tut: TButton
+        Left = 378
+        Height = 27
+        Top = 0
+        Width = 90
+        Align = alRight
+        Caption = 'Überspringen'
+        ModalResult = 3
+        TabOrder = 0
+      end
+      object btn_ok: TButton
+        Left = 303
+        Height = 27
+        Top = 0
+        Width = 75
+        Align = alRight
+        Caption = 'Ok'
+        ModalResult = 1
+        TabOrder = 1
+      end
+    end
+    object lbl_tut_info: TLabel
+      Left = 5
+      Height = 79
+      Top = 5
+      Width = 468
+      Align = alClient
+      Alignment = taCenter
+      Caption = 'lbl_tut_info'
+      Layout = tlCenter
+      WordWrap = True
+    end
+  end
+end

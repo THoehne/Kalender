@@ -1,0 +1,154 @@
+object frmDay: TfrmDay
+  Left = 1993
+  Height = 455
+  Top = 386
+  Width = 449
+  BorderIcons = []
+  Caption = 'frmDay'
+  ClientHeight = 455
+  ClientWidth = 449
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  ShowInTaskBar = stNever
+  LCLVersion = '3.0.0.3'
+  object lbl_date: TLabel
+    Left = 0
+    Height = 20
+    Top = 10
+    Width = 449
+    Align = alTop
+    Alignment = taCenter
+    BorderSpacing.Top = 10
+    Caption = 'lbl_date'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -15
+    Font.Name = 'Nirmala UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    Layout = tlCenter
+    ParentFont = False
+  end
+  object tb_appointment_edit: TToolBar
+    Left = 5
+    Height = 26
+    Top = 80
+    Width = 439
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 50
+    BorderSpacing.Right = 5
+    Caption = 'tb_appointment_edit'
+    TabOrder = 0
+    object btn_app_edt_plus: TSpeedButton
+      Left = 1
+      Height = 22
+      Top = 2
+      Width = 23
+      Images = iml_system
+      ImageIndex = 0
+      OnClick = btn_app_edt_plusClick
+    end
+    object btn_app_edt_minus: TSpeedButton
+      Left = 24
+      Height = 22
+      Top = 2
+      Width = 23
+      Images = iml_system
+      ImageIndex = 1
+      OnClick = btn_app_edt_minusClick
+    end
+  end
+  object pnl_controlls: TPanel
+    Left = 0
+    Height = 27
+    Top = 423
+    Width = 444
+    Align = alBottom
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 5
+    BorderSpacing.Bottom = 5
+    BevelOuter = bvNone
+    ClientHeight = 27
+    ClientWidth = 444
+    TabOrder = 1
+    object bt_save: TButton
+      Left = 289
+      Height = 27
+      Top = 0
+      Width = 75
+      Align = alRight
+      BorderSpacing.Right = 5
+      Caption = 'Speichern'
+      ModalResult = 1
+      TabOrder = 0
+      OnClick = bt_saveClick
+    end
+    object btn_abort: TButton
+      Left = 369
+      Height = 27
+      Top = 0
+      Width = 75
+      Align = alRight
+      Caption = 'Abbrechen'
+      ModalResult = 3
+      TabOrder = 1
+    end
+  end
+  object stg_appointment: TStringGrid
+    Left = 5
+    Height = 307
+    Top = 111
+    Width = 439
+    Align = alClient
+    AutoFillColumns = True
+    BorderSpacing.Around = 5
+    ColCount = 3
+    Columns = <    
+      item
+        Title.Caption = 'Title'
+        Width = 371
+      end    
+      item
+        Title.Caption = 'Id'
+        Width = 0
+        Visible = False
+      end>
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goRowSelect, goSmoothScroll]
+    RowCount = 1
+    TabOrder = 2
+    OnDblClick = set_time
+    OnEditingDone = RegisterChange
+    ColWidths = (
+      64
+      371
+      0
+    )
+    Cells = (
+      1
+      0
+      0
+      'Uhrzeit'
+    )
+  end
+  object iml_system: TImageList
+    Left = 320
+    Top = 40
+    Bitmap = {
+      4C7A020000001000000010000000510000000000000078DAFBFFFF3FC37F1CB8
+      B0B0B00B84FFE351830F2724242C00E151FDB4D30F8A1F983A74ACA2A2720784
+      71C9C3E29712FDA3F13778F5539A7F47F1E0C7F8F22F214C28FF13A37F340E86
+      36060074A487DC
+    }
+  end
+  object MainMenu1: TMainMenu
+    Left = 92
+    Top = 219
+    object mnu_btn_abort: TMenuItem
+      Caption = 'Abbrechen'
+      ShortCut = 27
+      Visible = False
+      OnClick = mnu_btn_abortClick
+    end
+  end
+end

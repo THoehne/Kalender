@@ -1,0 +1,43 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tfrmmain.btn_heute.caption
+msgid "Today"
+msgstr ""
+
+#: tfrmmain.caption
+msgid "Calender"
+msgstr ""
+
+#: tfrmmain.lbl_header_0.caption
+msgid "Monday"
+msgstr ""
+
+#: tfrmmain.lbl_header_1.caption
+msgid "Tuesday"
+msgstr ""
+
+#: tfrmmain.lbl_header_2.caption
+msgid "Wednesday"
+msgstr ""
+
+#: tfrmmain.lbl_header_3.caption
+msgid "Thursday"
+msgstr ""
+
+#: tfrmmain.lbl_header_4.caption
+msgid "Friday"
+msgstr ""
+
+#: tfrmmain.lbl_header_5.caption
+msgid "Saturday"
+msgstr ""
+
+#: tfrmmain.lbl_header_6.caption
+msgid "Sunday"
+msgstr ""
+
+#: tfrmmain.mnu_btn_tutorial_start.caption
+msgid "Tutorial"
+msgstr ""
+

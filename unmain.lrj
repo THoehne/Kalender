@@ -1,0 +1,12 @@
+{"version":1,"strings":[
+{"hash":137121362,"name":"tfrmmain.caption","sourcebytes":[67,97,108,101,110,100,101,114],"value":"Calender"},
+{"hash":88492681,"name":"tfrmmain.lbl_header_0.caption","sourcebytes":[77,111,110,100,97,121],"value":"Monday"},
+{"hash":196909785,"name":"tfrmmain.lbl_header_1.caption","sourcebytes":[84,117,101,115,100,97,121],"value":"Tuesday"},
+{"hash":189581113,"name":"tfrmmain.lbl_header_2.caption","sourcebytes":[87,101,100,110,101,115,100,97,121],"value":"Wednesday"},
+{"hash":264871721,"name":"tfrmmain.lbl_header_3.caption","sourcebytes":[84,104,117,114,115,100,97,121],"value":"Thursday"},
+{"hash":81328777,"name":"tfrmmain.lbl_header_4.caption","sourcebytes":[70,114,105,100,97,121],"value":"Friday"},
+{"hash":146575129,"name":"tfrmmain.lbl_header_5.caption","sourcebytes":[83,97,116,117,114,100,97,121],"value":"Saturday"},
+{"hash":95177353,"name":"tfrmmain.lbl_header_6.caption","sourcebytes":[83,117,110,100,97,121],"value":"Sunday"},
+{"hash":5986953,"name":"tfrmmain.btn_heute.caption","sourcebytes":[84,111,100,97,121],"value":"Today"},
+{"hash":213289676,"name":"tfrmmain.mnu_btn_tutorial_start.caption","sourcebytes":[84,117,116,111,114,105,97,108],"value":"Tutorial"}
+]}

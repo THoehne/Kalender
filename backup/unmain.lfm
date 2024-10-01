@@ -1,0 +1,283 @@
+object frmMain: TfrmMain
+  Left = 1212
+  Height = 641
+  Top = 318
+  Width = 1395
+  Caption = 'Calender'
+  ClientHeight = 641
+  ClientWidth = 1395
+  Color = clWhite
+  Constraints.MinHeight = 531
+  Constraints.MinWidth = 1167
+  Menu = mnu_main
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  LCLVersion = '3.0.0.3'
+  object pnl_header: TPanel
+    Left = 5
+    Height = 50
+    Top = 5
+    Width = 1385
+    Align = alTop
+    BorderSpacing.Around = 5
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ClientHeight = 46
+    ClientWidth = 1381
+    Color = 7039851
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object btn_prev_m: TSpeedButton
+      Left = 0
+      Height = 46
+      Top = 0
+      Width = 46
+      Align = alLeft
+      Color = clDefault
+      Flat = True
+      Images = img_system
+      ImageIndex = 0
+      OnClick = btn_prev_mClick
+    end
+    object btn_suc_m: TSpeedButton
+      Left = 1335
+      Height = 46
+      Top = 0
+      Width = 46
+      Align = alRight
+      Color = clDefault
+      Flat = True
+      Images = img_system
+      ImageIndex = 1
+      OnClick = btn_suc_mClick
+    end
+    object lbl_month: TLabel
+      Left = 46
+      Height = 46
+      Top = 0
+      Width = 1289
+      Align = alClient
+      Alignment = taCenter
+      AutoSize = False
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Nirmala UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      Layout = tlCenter
+      ParentColor = False
+      ParentFont = False
+      OnDblClick = OpenSetMonth
+    end
+  end
+  object pnl_main_viewport: TPanel
+    Left = 5
+    Height = 576
+    Top = 60
+    Width = 1385
+    Align = alClient
+    BorderSpacing.Around = 5
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    ClientHeight = 572
+    ClientWidth = 1381
+    ParentBackground = False
+    TabOrder = 1
+    object viewport: TPanel
+      Left = 3
+      Height = 537
+      Top = 32
+      Width = 1375
+      Align = alClient
+      Alignment = taLeftJustify
+      BorderSpacing.Top = 3
+      BorderSpacing.Around = 3
+      BevelOuter = bvNone
+      ChildSizing.LeftRightSpacing = 3
+      ChildSizing.TopBottomSpacing = 2
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 7
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 0
+      VerticalAlignment = taAlignTop
+    end
+    object pnl_weekday_header: TPanel
+      Left = 0
+      Height = 26
+      Top = 0
+      Width = 1381
+      Align = alTop
+      ChildSizing.HorizontalSpacing = 1
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousSpaceResize
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 7
+      ClientHeight = 26
+      ClientWidth = 1381
+      Color = 7039851
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 1
+      object lbl_header_0: TLabel
+        Left = 0
+        Height = 17
+        Top = 5
+        Width = 195
+        Alignment = taCenter
+        Caption = 'Monday'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lbl_header_1: TLabel
+        Left = 196
+        Height = 17
+        Top = 5
+        Width = 195
+        Alignment = taCenter
+        Caption = 'Tuesday'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lbl_header_2: TLabel
+        Left = 392
+        Height = 17
+        Top = 5
+        Width = 216
+        Alignment = taCenter
+        Caption = 'Wednesday'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lbl_header_3: TLabel
+        Left = 609
+        Height = 17
+        Top = 5
+        Width = 202
+        Alignment = taCenter
+        Caption = 'Thursday'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lbl_header_4: TLabel
+        Left = 812
+        Height = 17
+        Top = 5
+        Width = 183
+        Alignment = taCenter
+        Caption = 'Friday'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lbl_header_5: TLabel
+        Left = 996
+        Height = 17
+        Top = 5
+        Width = 199
+        Alignment = taCenter
+        Caption = 'Saturday'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lbl_header_6: TLabel
+        Left = 1196
+        Height = 17
+        Top = 5
+        Width = 185
+        Alignment = taCenter
+        Caption = 'Sunday'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -13
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+    end
+  end
+  object img_system: TImageList
+    Left = 288
+    Top = 144
+    Bitmap = {
+      4C7A020000001000000010000000DA0100000000000078DAB553C94AC35014AD
+      2D52D3095A5A82980EA91B216D4405115A3A53BAE8909F50EA42A93F522B4855
+      103FC1A5AE74E34EDC88A038E027A89FE03D42203C92BC17D4C085F0DE3BE74E
+      E71886E1332C51A954563399CC7128147AF1FBFD5F08FA7FCE66B3D35AADB66C
+      30EFCDE876BB523A9D3E0D87C34FBAAE6FB6DBED79F38EFE178AC5E2367888FB
+      A8D7EB05596C3C1EBFC9E57213BA9B65B909AFC462B1BB6AB5BA42F8692291B8
+      B672202FB07675014B795F65593EEFF7FB3FDCA881FA3934FB45CD4E79592C82
+      DECE4992F456AFD735E23A41BFA258330A85C28EAAAA0778639D950816D16AB5
+      D44824F280FD78C5220683C14C2010F8FC25FE033BC57EBD72349BCDC568347A
+      0F5D9136865EE7A769DA289FCF8F49933AB4CA6ACA8D037AA3EFBDD1682C997A
+      80AE44F4437DFB144539A3DD8D2D7A089226AFE01B68C349BFA4B5356093C9E4
+      25AB37704093D015B481FD62C608CC8AFADD43CD9477DF4EAB664093F466026D
+      60BFD811E68C5999FDBAC51FF97F8BF53F9D0D45FC5F2E97D76956B79D4E4766
+      7300C7F33FCE53A9D405D5F168C721E27F1E8788FF791C6EFE17E170F2BF2887
+      93FF3DE26DFD2F523FCFFFBCF9B9F99F8775F33F0FCBF37FA954DA70D22FF28A
+      F89F7ADBB5F1FFE83FFCFF0DB14CE1E2
+    }
+  end
+  object mnu_main: TMainMenu
+    Left = 870
+    Top = 205
+    object btn_heute: TMenuItem
+      Caption = 'Today'
+      OnClick = btn_heuteClick
+    end
+    object mnu_btn_tutorial_start: TMenuItem
+      Caption = 'Tutorial'
+      OnClick = mnu_btn_tutorial_startClick
+    end
+    object mnu_btn_back: TMenuItem
+      ShortCut = 37
+      Visible = False
+      OnClick = mnu_btn_backClick
+    end
+    object mnu_btn_next: TMenuItem
+      ShortCut = 39
+      Visible = False
+      OnClick = mnu_btn_nextClick
+    end
+    object mnu_btn_open: TMenuItem
+      ShortCut = 13
+      Visible = False
+      OnClick = mnu_btn_openClick
+    end
+  end
+end
